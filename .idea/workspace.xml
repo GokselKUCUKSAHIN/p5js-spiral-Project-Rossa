@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Sliders added.">
-      <change afterPath="$PROJECT_DIR$/docs/typeDef/p5.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/typeDef/p5.global-mode.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/typeDef/reference.js" afterDir="false" />
+    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="hello">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/script/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627910877231</updated>
-      <workItem from="1627910879262" duration="3479000" />
+      <workItem from="1627910879262" duration="3681000" />
     </task>
     <servers />
   </component>
@@ -86,6 +80,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Live server's crap removed." />
     <MESSAGE value="Sliders added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sliders added." />
+    <MESSAGE value="Types added." />
+    <MESSAGE value="hello" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello" />
   </component>
 </project>
