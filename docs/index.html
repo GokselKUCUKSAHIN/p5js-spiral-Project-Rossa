@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spyral</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <style>
+      html {
+          box-sizing: border-box;
+      }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div id="p5canvas"></div>
+  <label for="slider">Slider: </label>
+  <input
+      style="width: 300px;"
+      id="slider"
+      type="range"
+      min="0.01"
+      max="2"
+      step="0.01"
+      value="1"
+      v-model:value="sliderValue"
+  >
+  <br>
+  <p>{{test}}</p>
+  <p>{{sliderValue}}</p>
+</div>
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      test: "Vue Working",
+      sliderValue: void 0,
+    }
+  });
+</script>
+</body>
+</html><script>
+  (function() {
+    var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=96');
+    ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+        window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+        var messageId = msg.data.substring(11);
+        var links = document.getElementsByTagName('link');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          if (link.rel !== 'stylesheet') continue;
+          var clonedLink = link.cloneNode(true);
+          var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+          if (newHref !== link.href) {
+            clonedLink.href = newHref;
+          }
+          else {
+            var indexOfQuest = newHref.indexOf('?');
+            if (indexOfQuest >= 0) {
+              // to support ?foo#hash
+              clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                newHref.substring(indexOfQuest + 1);
+            }
+            else {
+              clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+            }
+          }
+          link.replaceWith(clonedLink);
+        }
+      }
+    };
+  })();
+</script>
