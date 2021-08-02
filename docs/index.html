@@ -15,7 +15,7 @@
   <div id="p5canvas"></div>
   <label class="myLabel" for="fraction">Fraction: </label>
   <input
-      style="width: 300px;"
+      class="mySlider"
       id="fraction"
       type="range"
       min="0.01"
@@ -28,7 +28,7 @@
   <br>
   <label class="myLabel" for="wingcount">Wing Count: </label>
   <input
-      style="width: 300px;"
+      class="mySlider"
       id="wingcount"
       type="range"
       min="0.01"
@@ -41,7 +41,7 @@
   <br>
   <label class="myLabel" for="dotsize">Dot Size: </label>
   <input
-      style="width: 300px;"
+      class="mySlider"
       id="dotsize"
       type="range"
       min="0.01"
@@ -52,9 +52,7 @@
       @change="changed"
   >
   <br>
-
   <p>{{test}}</p>
-  <p>{{sliderValue}}</p>
 </div>
 <script>
   new Vue({

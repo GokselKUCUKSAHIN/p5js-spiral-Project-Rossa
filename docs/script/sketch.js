@@ -4,12 +4,12 @@ const height = 600;
 function setup() {
   const canvas = createCanvas(width, height);
   canvas.parent("p5canvas");
-  background(64, 128, 128);
-  colorCounter = 0;
-  colorMode(HSB, 1);
-  strokeWeight(5);
+  background(51);
+  fill(255, 0, 0);
+  noStroke();
+  ellipse(300, 300, 10, 10);
+  noLoop();
 }
 
 function draw() {
-
 }

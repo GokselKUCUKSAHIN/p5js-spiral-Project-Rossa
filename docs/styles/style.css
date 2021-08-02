@@ -3,5 +3,8 @@ html {
 }
 .myLabel {
     display: inline-block;
-    width: 85px;
+    width: 100px;
+}
+.mySlider {
+    width: 350px;
 }
