@@ -19,85 +19,76 @@
       id="fraction"
       type="range"
       min="0.01"
-      max="2"
-      step="0.01"
-      value="1"
+      max="1"
+      step="0.001"
+      value="0.5"
       v-model:value="fraction"
       @change="changed"
   >
   <label class="decimalLabel" for="fraction">{{fractionComputed}}</label>
   <br>
-  <label class="myLabel" for="wingcount">Wing Count: </label>
+  <label class="myLabel" for="numberOfPoints"># of Points: </label>
   <input
       class="mySlider"
-      id="wingcount"
+      id="numberOfPoints"
       type="range"
-      min="0.01"
-      max="2"
-      step="0.01"
-      value="1"
-      v-model:value="wingcount"
+      min="100"
+      max="5000"
+      step="1"
+      value="500"
+      v-model:value="numberOfPoints"
       @change="changed"
   >
-  <label class="decimalLabel" for="wingcount">{{wingcountComputed}}</label>
+  <label class="decimalLabel" for="numberOfPoints">{{numberOfPoints}}</label>
   <br>
   <label class="myLabel" for="dotsize">Dot Size: </label>
   <input
       class="mySlider"
       id="dotsize"
       type="range"
-      min="0.01"
-      max="2"
-      step="0.01"
-      value="1"
+      min="1"
+      max="5"
+      step="0.005"
+      value="3"
       v-model:value="dotsize"
       @change="changed"
   >
   <label class="decimalLabel" for="dotsize">{{dotsizeComputed}}</label>
   <br>
-  <p>{{test}}</p>
 </div>
 <script>
   const vueInstance = new Vue({
     el: "#app",
     data: {
-      test: "Vue Working",
-      fraction: 0,   // val
-      wingcount: 0,  // val
-      dotsize: 0     // val
+      fraction: 0.5,
+      numberOfPoints: 500,
+      dotsize: 3
     },
     methods: {
       changed(event) {
         console.log(this.getValue(event));
-        this.redrawRequest();
       },
       getValue(event) {
         return event.target.value;
       },
       fixedDecimal(num) {
         return parseFloat(num).toFixed(3);
-      },
-      redrawRequest() {
-        p5redraw(this.fraction, this.wingcount, this.dotsize);
       }
     },
     watch: {
       fraction(oldVal, newVal) {
-        this.redrawRequest();
+        p5redraw();
       },
-      wingcount(oldVal, newVal) {
-        this.redrawRequest();
+      numberOfPoints(oldVal, newVal) {
+        p5redraw();
       },
       dotsize(oldVal, newVal) {
-        this.redrawRequest();
+        p5redraw();
       }
     },
     computed: {
       fractionComputed() {
         return this.fixedDecimal(this.fraction);
-      },
-      wingcountComputed() {
-        return this.fixedDecimal(this.wingcount);
       },
       dotsizeComputed() {
         return this.fixedDecimal(this.dotsize);
