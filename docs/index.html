@@ -22,7 +22,7 @@
       max="2"
       step="0.01"
       value="1"
-      v-model:value="sliders.fraction"
+      v-model:value="fraction"
       @change="changed"
   >
   <br>
@@ -35,7 +35,7 @@
       max="2"
       step="0.01"
       value="1"
-      v-model:value="sliders.wingcount"
+      v-model:value="wingcount"
       @change="changed"
   >
   <br>
@@ -48,29 +48,42 @@
       max="2"
       step="0.01"
       value="1"
-      v-model:value="sliders.dotsize"
+      v-model:value="dotsize"
       @change="changed"
   >
   <br>
   <p>{{test}}</p>
 </div>
 <script>
-  new Vue({
+  const vueInstance = new Vue({
     el: "#app",
     data: {
       test: "Vue Working",
-      sliders: {
-        fraction: void 0,
-        wingcount: void 0,
-        dotsize: void 0
-      }
+      fraction: void 0,   // val
+      wingcount: void 0,  // val
+      dotsize: void 0     // val
     },
     methods: {
       changed(event) {
         console.log(this.getValue(event));
+        this.redrawRequest();
       },
       getValue(event) {
         return event.target.value;
+      },
+      redrawRequest() {
+        p5redraw(this.fraction, this.wingcount, this.dotsize);
+      }
+    },
+    watch: {
+      fraction(oldVal, newVal) {
+        this.redrawRequest();
+      },
+      wingcount(oldVal, newVal) {
+        this.redrawRequest();
+      },
+      dotsize(oldVal, newVal) {
+        this.redrawRequest();
       }
     }
   });

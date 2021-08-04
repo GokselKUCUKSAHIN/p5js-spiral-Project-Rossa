@@ -12,4 +12,20 @@ function setup() {
 }
 
 function draw() {
+  drawRandomBall();
+}
+
+function drawBall(x, y) {
+  ellipse(x, y, 5, 5);
+}
+
+function drawRandomBall() {
+  const x = Math.random() * 600;
+  const y = Math.random() * 600;
+  drawBall(x, y);
+}
+
+function p5redraw(fraction, wingcount, dotsize) {
+  console.log(fraction, wingcount, dotsize);
+  redraw();
 }
