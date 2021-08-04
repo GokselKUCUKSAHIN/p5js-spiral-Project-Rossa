@@ -1,5 +1,5 @@
 const width = 600;
-const height = 600;
+const height = width;
 const R = width * 0.45;
 
 function setup() {

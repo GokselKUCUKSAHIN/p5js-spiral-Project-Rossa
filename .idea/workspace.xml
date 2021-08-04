@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Renamed">
+    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Radius set as parametrik.">
+      <change afterPath="$PROJECT_DIR$/docs/script/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/script/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,7 +74,8 @@
       <workItem from="1627916967656" duration="278000" />
       <workItem from="1627917548642" duration="847000" />
       <workItem from="1627970583349" duration="226000" />
-      <workItem from="1627986594108" duration="4881000" />
+      <workItem from="1627986594108" duration="5589000" />
+      <workItem from="1628074673122" duration="1120000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1627916981679</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628063534539</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Radius set as parametrik.">
+      <created>1628069183736</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628069183737</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +156,8 @@
     <MESSAGE value="BETA complete." />
     <MESSAGE value="drawSpyral updated." />
     <MESSAGE value="Renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed" />
+    <MESSAGE value="Title changed." />
+    <MESSAGE value="Radius set as parametrik." />
+    <option name="LAST_COMMIT_MESSAGE" value="Radius set as parametrik." />
   </component>
 </project>
