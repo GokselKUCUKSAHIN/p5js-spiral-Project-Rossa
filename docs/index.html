@@ -25,6 +25,7 @@
       v-model:value="fraction"
       @change="changed"
   >
+  <label class="decimalLabel" for="fraction">{{fractionComputed}}</label>
   <br>
   <label class="myLabel" for="wingcount">Wing Count: </label>
   <input
@@ -38,6 +39,7 @@
       v-model:value="wingcount"
       @change="changed"
   >
+  <label class="decimalLabel" for="wingcount">{{wingcountComputed}}</label>
   <br>
   <label class="myLabel" for="dotsize">Dot Size: </label>
   <input
@@ -51,6 +53,7 @@
       v-model:value="dotsize"
       @change="changed"
   >
+  <label class="decimalLabel" for="dotsize">{{dotsizeComputed}}</label>
   <br>
   <p>{{test}}</p>
 </div>
@@ -59,9 +62,9 @@
     el: "#app",
     data: {
       test: "Vue Working",
-      fraction: void 0,   // val
-      wingcount: void 0,  // val
-      dotsize: void 0     // val
+      fraction: 0,   // val
+      wingcount: 0,  // val
+      dotsize: 0     // val
     },
     methods: {
       changed(event) {
@@ -70,6 +73,9 @@
       },
       getValue(event) {
         return event.target.value;
+      },
+      fixedDecimal(num) {
+        return parseFloat(num).toFixed(3);
       },
       redrawRequest() {
         p5redraw(this.fraction, this.wingcount, this.dotsize);
@@ -84,6 +90,17 @@
       },
       dotsize(oldVal, newVal) {
         this.redrawRequest();
+      }
+    },
+    computed: {
+      fractionComputed() {
+        return this.fixedDecimal(this.fraction);
+      },
+      wingcountComputed() {
+        return this.fixedDecimal(this.wingcount);
+      },
+      dotsizeComputed() {
+        return this.fixedDecimal(this.dotsize);
       }
     }
   });

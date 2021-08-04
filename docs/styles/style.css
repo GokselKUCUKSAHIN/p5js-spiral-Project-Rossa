@@ -5,6 +5,10 @@ html {
     display: inline-block;
     width: 100px;
 }
+.decimalLabel {
+    display: inline-block;
+    margin-left: 8px;
+}
 .mySlider {
-    width: 350px;
+    width: 440px;
 }
