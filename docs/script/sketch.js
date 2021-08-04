@@ -16,14 +16,14 @@ function draw() {
   translate(width * 0.5, height * 0.5);
   ellipse(0, 0, 10, 10);
   background(51);
-  drawSpyral(vueInstance.fraction, vueInstance.numberOfPoints, vueInstance.dotsize);
+  drawSpiral(vueInstance.fraction, vueInstance.numberOfPoints, vueInstance.dotsize);
 }
 
 function drawBall(x, y, size) {
   ellipse(x, y, size);
 }
 
-function drawSpyral(fraction, numberOfPoints, dotsize) {
+function drawSpiral(fraction, numberOfPoints, dotsize) {
   for (let i = 0; i < numberOfPoints; i++) {
     const dist = i / (numberOfPoints - 1);
     const angle = TWO_PI * fraction * i;
