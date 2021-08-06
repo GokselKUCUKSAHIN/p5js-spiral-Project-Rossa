@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Radius set as parametrik.">
-      <change afterPath="$PROJECT_DIR$/docs/script/vue.js" afterDir="false" />
+    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Vue coded moved as seperate file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/script/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/script/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script/vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,9 @@
       <workItem from="1627917548642" duration="847000" />
       <workItem from="1627970583349" duration="226000" />
       <workItem from="1627986594108" duration="5589000" />
-      <workItem from="1628074673122" duration="1120000" />
+      <workItem from="1628074673122" duration="1473000" />
+      <workItem from="1628168676413" duration="308000" />
+      <workItem from="1628234830976" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1627916981679</created>
@@ -158,6 +159,7 @@
     <MESSAGE value="Renamed" />
     <MESSAGE value="Title changed." />
     <MESSAGE value="Radius set as parametrik." />
-    <option name="LAST_COMMIT_MESSAGE" value="Radius set as parametrik." />
+    <MESSAGE value="Vue coded moved as seperate file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue coded moved as seperate file." />
   </component>
 </project>

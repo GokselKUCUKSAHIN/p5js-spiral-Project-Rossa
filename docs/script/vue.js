@@ -12,8 +12,8 @@ const vueInstance = new Vue({
     getValue(event) {
       return event.target.value;
     },
-    fixedDecimal(num) {
-      return parseFloat(num).toFixed(3);
+    fixedDecimal(num, degree) {
+      return parseFloat(num).toFixed(degree);
     }
   },
   watch: {
@@ -29,10 +29,10 @@ const vueInstance = new Vue({
   },
   computed: {
     fractionComputed() {
-      return this.fixedDecimal(this.fraction);
+      return this.fixedDecimal(this.fraction, 5);
     },
     dotsizeComputed() {
-      return this.fixedDecimal(this.dotsize);
+      return this.fixedDecimal(this.dotsize, 3);
     }
   }
 });
