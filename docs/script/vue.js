@@ -1,7 +1,7 @@
 const vueInstance = new Vue({
   el: "#app",
   data: {
-    fraction: 0.5,
+    fraction: 0.6180339887498949,
     numberOfPoints: 500,
     dotsize: 3
   },

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Vue coded moved as seperate file.">
+    <list default="true" id="6c7991bd-50db-4800-9c1e-4abb13e0f9aa" name="Changes" comment="Step size decreased.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/script/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script/vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +57,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/node_modules/@types/p5" />
       <recent name="$PROJECT_DIR$/docs/script" />
     </key>
   </component>
@@ -76,7 +76,8 @@
       <workItem from="1627986594108" duration="5589000" />
       <workItem from="1628074673122" duration="1473000" />
       <workItem from="1628168676413" duration="308000" />
-      <workItem from="1628234830976" duration="203000" />
+      <workItem from="1628234830976" duration="1381000" />
+      <workItem from="1631438939188" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1627916981679</created>
@@ -160,6 +161,7 @@
     <MESSAGE value="Title changed." />
     <MESSAGE value="Radius set as parametrik." />
     <MESSAGE value="Vue coded moved as seperate file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue coded moved as seperate file." />
+    <MESSAGE value="Step size decreased." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step size decreased." />
   </component>
 </project>
